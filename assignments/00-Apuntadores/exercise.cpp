@@ -14,8 +14,8 @@ int main()
   std::cout << ptrInt << " es la dirección de memoria o apuntador (ptrInt) donde está el dato x " << "\n";
   std::cout << *ptrInt << " es el valor del dato x que está en la dirección de memoria o apuntador (ptrInt) " << "\n\n";
 
-// Reservando un espacio en memoria para un entero NO existente y que se genera dinamicamente ---------------
-  int *ptrInt2 = new int{20};   //Crea un dato entero dinamicamente y le asigna un valor de 20
+// Reservando un espacio en memoria para un entero NO existente y que se genera DINAMICAMENTE ---------------
+  int *ptrInt2 = new int{20};   //Crea un dato entero DINAMICAMENTE y le asigna un valor de 20
 
   std::cout << ptrInt2 << " es la dirección de memoria donde está el dato generado dinámicamente (*ptrInt2)" << "\n";
   std::cout << *ptrInt2 << " es el valor del dato que está en la dirección de memoria o apuntador ptrInt2" << "\n\n";
@@ -26,12 +26,12 @@ int main()
 
   std::cout << ptrFig->draw() << "\n";  
 
-// Reservando espacio para un objeto NO existente y que se genera dinamicamente ----------------------------------
-  Shape* ptrFig2 = new Shape(2,3); //Crea el objeto Shape dinamicamente
+// Reservando espacio para un objeto NO existente y que se genera DINAMICAMENTE ----------------------------------
+  Shape* ptrFig2 = new Shape(2,3); //Crea el objeto Shape DINAMICAMENTE
 
   std::cout << ptrFig2->draw() << "\n";
   
-// Liberando memoria de objetos creados dinamicamente ------------------------------------------------------------
+// Liberando memoria de objetos creados DINAMICAMENTE ------------------------------------------------------------
 
     delete ptrInt2;
     delete ptrFig2;
