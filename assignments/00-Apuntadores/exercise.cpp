@@ -8,13 +8,13 @@ int main()
   int* ptrInt;
 
 
-// Creando apuntadores a 1 dato entero SI existente -----------------------------------------------------------
+// Creando apuntadores a 1 dato entero SI existente (creado en Tiempo de Compilación, cuando lo declaras) ------------------------------------------------------
   ptrInt = &x;   //Asigna la dirección de memoria de x al apuntador ptrInt
 
   std::cout << ptrInt << " es la dirección de memoria o apuntador (ptrInt) donde está el dato x " << "\n";
   std::cout << *ptrInt << " es el valor del dato x que está en la dirección de memoria o apuntador (ptrInt) " << "\n\n";
 
-// Reservando un espacio en memoria para un entero NO existente y que se genera DINAMICAMENTE ---------------
+// Reservando un espacio en memoria para un entero NO existente y que se genera DINAMICAMENTE (creado en Tiempo de Ejecución, cuando ejecutas el programa) ----
   int *ptrInt2 = new int{20};   //Crea un dato entero DINAMICAMENTE y le asigna un valor de 20
 
   std::cout << ptrInt2 << " es la dirección de memoria donde está el dato generado dinámicamente (*ptrInt2)" << "\n";
