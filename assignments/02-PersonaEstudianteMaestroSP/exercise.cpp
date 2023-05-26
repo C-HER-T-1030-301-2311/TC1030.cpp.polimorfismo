@@ -16,7 +16,7 @@ int main()
   std::cout<<"\n Con apuntador Estudiante y objeto Estudiante muestra \n";
   ptrEst->muestraDatos();
 
-  //OJO se inicializa con objeto Estudiante al apuntador a Persona
+  //OJO se inicializa el apuntador a Persona con un objeto de tipo Estudiante
   ptrPers = new Estudiante{"Renato", 19, "ITC"};
   std::cout<<"\n Con apuntador Persona y objeto Estudiante muestra \n";
   ptrPers->muestraDatos();
