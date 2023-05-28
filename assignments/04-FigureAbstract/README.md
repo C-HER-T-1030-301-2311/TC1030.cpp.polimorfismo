@@ -4,11 +4,13 @@
 
 ```mermaid
 classDiagram
+      class Figura
+      <<abstract>> Figura
       Figura <|-- Circulo
       Figura <|-- Rectangulo
       Figura <|-- Triangulo
 
-      Figura : dibuja()
+      Figura : dibuja()*
       Rectangulo : dibuja()
       Triangulo : dibuja()
       Circulo : dibuja()
